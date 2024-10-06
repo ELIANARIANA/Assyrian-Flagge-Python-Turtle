@@ -40,18 +40,18 @@ def draw_fly(color, start_pos, left_right_direction, for_back_ward):
 
     if for_back_ward == "forward":
         t.forward(75)
-        t.circle(-75,45)
-        t.circle(75,80)
-        t.circle(-75,80)
-        t.circle(75,80)
-        t.circle(-75,50)
+        t.circle(-75, 45)
+        t.circle(75 , 80)
+        t.circle(-75, 80)
+        t.circle(75 , 80)
+        t.circle(-75, 50)
     else:
         t.backward(75)
-        t.circle(-75,-45)
-        t.circle(75,-80)
-        t.circle(-75,-80)
-        t.circle(75,-80)
-        t.circle(-75,-50)
+        t.circle(-75, -45)
+        t.circle(75 , -80)
+        t.circle(-75, -80)
+        t.circle(75 , -80)
+        t.circle(-75, -50)
 
     if color == "Red2":
         t.left(90)
@@ -66,18 +66,18 @@ def draw_fly(color, start_pos, left_right_direction, for_back_ward):
         t.left(90)
     
     if for_back_ward == "forward":
-        t.circle(-75,-50)
-        t.circle(75,-80)
-        t.circle(-75,-80)
-        t.circle(75,-80)
-        t.circle(-75,-45)
+        t.circle(-75, -50)
+        t.circle(75 , -80)
+        t.circle(-75, -80)
+        t.circle(75 , -80)
+        t.circle(-75, -45)
         t.backward(75)
     else:
-        t.circle(-75,50)
-        t.circle(75,80)
-        t.circle(-75,80)
-        t.circle(75,80)
-        t.circle(-75,45)
+        t.circle(-75, 50)
+        t.circle(75 , 80)
+        t.circle(-75, 80)
+        t.circle(75 , 80)
+        t.circle(-75, 45)
         t.backward(-75)
     
     t.goto(start_pos)
@@ -101,7 +101,7 @@ draw_fly("Red2", (-55,-60), "right", "forward")
 draw_fly("Blue", (-80,-48), "right", "forward")
 
 #fly4 red and blue right down
-draw_fly("Red2", (45, -60), "left", "backward")
+draw_fly("Red2", (45,-60), "left", "backward")
 draw_fly("Blue", (80,-48), "left", "backward")
 
 #body
