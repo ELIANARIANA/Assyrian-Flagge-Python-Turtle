@@ -106,19 +106,19 @@ def draw_wing(color, start_pos, left_right_direction, for_back_ward):
 # endregion
 
 # region: Draw all the wings of the Assyrian flag
-#fly1 red and blue left up
+#wing1 red and blue left up
 draw_wing(COLOR_RED , (-80,48), DIRECTION_LEFT, DIRECTION_FORWARD)
 draw_wing(COLOR_BLUE, (-55,60), DIRECTION_LEFT, DIRECTION_FORWARD)
 
-#fly2 red and blue right up
+#wing2 red and blue right up
 draw_wing(COLOR_RED , (80,48), DIRECTION_RIGHT, DIRECTION_BACKWARD)
 draw_wing(COLOR_BLUE, (52,60), DIRECTION_RIGHT, DIRECTION_BACKWARD)
 
-#fly3 red and blue left down
+#wing3 red and blue left down
 draw_wing(COLOR_RED , (-55,-60), DIRECTION_RIGHT, DIRECTION_FORWARD)
 draw_wing(COLOR_BLUE, (-80,-48), DIRECTION_RIGHT, DIRECTION_FORWARD)
 
-#fly4 red and blue right down
+#wing4 red and blue right down
 draw_wing(COLOR_RED , (45,-60), DIRECTION_LEFT, DIRECTION_BACKWARD)
 draw_wing(COLOR_BLUE, (80,-48), DIRECTION_LEFT, DIRECTION_BACKWARD)
 # endregion
