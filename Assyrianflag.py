@@ -15,6 +15,12 @@ COLOR_BODY   = "#00BFFF"
 COLOR_WHITE  = "White"
 COLOR_ORANGE = "Orange"
 
+# Direction
+DIRECTION_LEFT     = "left"
+DIRECTION_RIGHT    = "right"
+DIRECTION_FORWARD  = "forward"
+DIRECTION_BACKWARD = "backward"
+
 # endregion  
 # pens speed  
 tc1.speed(3)
@@ -43,12 +49,12 @@ def draw_fly(color, start_pos, left_right_direction, for_back_ward):
     t.down()
     t.begin_fill()
 
-    if left_right_direction == "left":
+    if left_right_direction == DIRECTION_LEFT:
         t.left(135)
     else:
         t.right(135)
 
-    if for_back_ward == "forward":
+    if for_back_ward == DIRECTION_FORWARD:
         t.forward(75)
         t.circle(-75, 45)
         t.circle(75 , 80)
@@ -75,7 +81,7 @@ def draw_fly(color, start_pos, left_right_direction, for_back_ward):
     else:
         t.left(90)
     
-    if for_back_ward == "forward":
+    if for_back_ward == DIRECTION_FORWARD:
         t.circle(-75, -50)
         t.circle(75 , -80)
         t.circle(-75, -80)
@@ -99,20 +105,20 @@ def draw_fly(color, start_pos, left_right_direction, for_back_ward):
 
 
 #fly1 red and blue left up
-draw_fly(COLOR_RED , (-80,48), "left", "forward")
-draw_fly(COLOR_BLUE, (-55,60), "left", "forward")
+draw_fly(COLOR_RED , (-80,48), DIRECTION_LEFT, DIRECTION_FORWARD)
+draw_fly(COLOR_BLUE, (-55,60), DIRECTION_LEFT, DIRECTION_FORWARD)
 
 #fly2 red and blue right up
-draw_fly(COLOR_RED , (80,48), "right", "backward")
-draw_fly(COLOR_BLUE, (52,60), "right", "backward")
+draw_fly(COLOR_RED , (80,48), DIRECTION_RIGHT, DIRECTION_BACKWARD)
+draw_fly(COLOR_BLUE, (52,60), DIRECTION_RIGHT, DIRECTION_BACKWARD)
 
 #fly3 red and blue left down
-draw_fly(COLOR_RED , (-55,-60), "right", "forward")
-draw_fly(COLOR_BLUE, (-80,-48), "right", "forward")
+draw_fly(COLOR_RED , (-55,-60), DIRECTION_RIGHT, DIRECTION_FORWARD)
+draw_fly(COLOR_BLUE, (-80,-48), DIRECTION_RIGHT, DIRECTION_FORWARD)
 
 #fly4 red and blue right down
-draw_fly(COLOR_RED , (45,-60), "left", "backward")
-draw_fly(COLOR_BLUE, (80,-48), "left", "backward")
+draw_fly(COLOR_RED , (45,-60), DIRECTION_LEFT, DIRECTION_BACKWARD)
+draw_fly(COLOR_BLUE, (80,-48), DIRECTION_LEFT, DIRECTION_BACKWARD)
 
 #body
 tt1.up()
