@@ -41,7 +41,7 @@ T.home()
 T.hideturtle()
 
 # region: Methods Helper
-def draw_fly(color, start_pos, left_right_direction, for_back_ward):
+def draw_wing(color, start_pos, left_right_direction, for_back_ward):
     t = turtle.Turtle()
 
     t.speed(0)
@@ -107,20 +107,20 @@ def draw_fly(color, start_pos, left_right_direction, for_back_ward):
 
 
 #fly1 red and blue left up
-draw_fly(COLOR_RED , (-80,48), DIRECTION_LEFT, DIRECTION_FORWARD)
-draw_fly(COLOR_BLUE, (-55,60), DIRECTION_LEFT, DIRECTION_FORWARD)
+draw_wing(COLOR_RED , (-80,48), DIRECTION_LEFT, DIRECTION_FORWARD)
+draw_wing(COLOR_BLUE, (-55,60), DIRECTION_LEFT, DIRECTION_FORWARD)
 
 #fly2 red and blue right up
-draw_fly(COLOR_RED , (80,48), DIRECTION_RIGHT, DIRECTION_BACKWARD)
-draw_fly(COLOR_BLUE, (52,60), DIRECTION_RIGHT, DIRECTION_BACKWARD)
+draw_wing(COLOR_RED , (80,48), DIRECTION_RIGHT, DIRECTION_BACKWARD)
+draw_wing(COLOR_BLUE, (52,60), DIRECTION_RIGHT, DIRECTION_BACKWARD)
 
 #fly3 red and blue left down
-draw_fly(COLOR_RED , (-55,-60), DIRECTION_RIGHT, DIRECTION_FORWARD)
-draw_fly(COLOR_BLUE, (-80,-48), DIRECTION_RIGHT, DIRECTION_FORWARD)
+draw_wing(COLOR_RED , (-55,-60), DIRECTION_RIGHT, DIRECTION_FORWARD)
+draw_wing(COLOR_BLUE, (-80,-48), DIRECTION_RIGHT, DIRECTION_FORWARD)
 
 #fly4 red and blue right down
-draw_fly(COLOR_RED , (45,-60), DIRECTION_LEFT, DIRECTION_BACKWARD)
-draw_fly(COLOR_BLUE, (80,-48), DIRECTION_LEFT, DIRECTION_BACKWARD)
+draw_wing(COLOR_RED , (45,-60), DIRECTION_LEFT, DIRECTION_BACKWARD)
+draw_wing(COLOR_BLUE, (80,-48), DIRECTION_LEFT, DIRECTION_BACKWARD)
 
 #body
 tt1.up()
