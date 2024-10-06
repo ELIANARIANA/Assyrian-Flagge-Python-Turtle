@@ -180,14 +180,13 @@ draw_wing(COLOR_BLUE, (80,-48), DIRECTION_LEFT, DIRECTION_BACKWARD)
 draw_body(COLOR_BODY, (52.5,-55))
 # endregion
 
-
-
-
+# region: Draw the circles of the Assyrian flag
 #Fist circle
 draw_circle(COLOR_WHITE, (0, -65), 65)
 
 #Second circle 
 draw_circle(COLOR_ORANGE, (0,-50), 50)  
+# endregion
 
 #Clear  coordinate axis
 T.clear()
