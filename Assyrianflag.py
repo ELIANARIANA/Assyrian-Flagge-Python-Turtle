@@ -21,12 +21,13 @@ DIRECTION_LEFT     = "left"
 DIRECTION_RIGHT    = "right"
 DIRECTION_FORWARD  = "forward"
 DIRECTION_BACKWARD = "backward"
+# endregion
 
 # region: Image
 IMAGE_ASHUR = "Ashur.gif"
-#endregion
+# endregion
+# endregion
 
-# endregion  
 # pens speed  
 tc1.speed(3)
 tc2.speed(3)
