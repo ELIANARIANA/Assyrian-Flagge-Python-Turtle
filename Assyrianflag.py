@@ -156,6 +156,23 @@ def draw_circle(color ,start_pos, diameter):
     t.hideturtle()
     t.end_fill()  
 
+def resize_and_add_image(image, image_pos):
+    from PIL import Image
+    im = Image.open(image)
+
+    new_size = (int(im.size[0]/3), int(im.size[1]/3))
+    im = im.resize(new_size)
+    im.save("{image}_resized.gif")
+
+    turtle.register_shape("{image}_resized.gif")
+
+    tAsh = turtle.Turtle()
+
+    tAsh.shape("{image}_resized.gif")
+    tAsh.color(COLOR_WHITE)
+    tAsh.penup()
+    tAsh.goto(image_pos)
+    
 # endregion
 
 # region: Draw all the wings of the Assyrian flag
