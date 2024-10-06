@@ -38,6 +38,70 @@ T.back (800)
 T.home()
 T.hideturtle()
 
+# region: Methods Helper
+def draw_fly(color, start_pos, left_right_direction, for_back_ward):
+    t = turtle.Turtle()
+
+    t.speed(0)
+    t.color(color)
+    t.up()
+    t.goto(start_pos)
+    t.down()
+    t.begin_fill()
+
+    if left_right_direction == "left":
+        t.left(135)
+    else:
+        t.right(135)
+
+    if for_back_ward == "forward":
+        t.forward(75)
+        t.circle(-75,45)
+        t.circle(75,80)
+        t.circle(-75,80)
+        t.circle(75,80)
+        t.circle(-75,50)
+    else:
+        t.backward(75)
+        t.circle(-75,-45)
+        t.circle(75,-80)
+        t.circle(-75,-80)
+        t.circle(75,-80)
+        t.circle(-75,-50)
+
+    if color == "Red2":
+        t.left(90)
+    else:
+        t.right(90)
+
+    t.forward(30)
+
+    if color == "Red2":
+        t.right(90)
+    else:
+        t.left(90)
+    
+    if for_back_ward == "forward":
+        t.circle(-75,-50)
+        t.circle(75,-80)
+        t.circle(-75,-80)
+        t.circle(75,-80)
+        t.circle(-75,-45)
+        t.backward(75)
+    else:
+        t.circle(-75,50)
+        t.circle(75,80)
+        t.circle(-75,80)
+        t.circle(75,80)
+        t.circle(-75,45)
+        t.backward(-75)
+    
+    t.goto(start_pos)
+
+    t.hideturtle()
+    t.end_fill()
+
+# endregion
 
 
 #fly1 red left 
