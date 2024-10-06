@@ -6,6 +6,16 @@ tc2 = turtle.Turtle()
 tt1 = turtle.Turtle()
 Ashur = turtle.Screen()
 
+# region: General constants
+
+# Colors
+COLOR_RED    = "Red2"
+COLOR_BLUE   = "Blue"
+COLOR_BODY   = "#00BFFF"
+COLOR_WHITE  = "White"
+COLOR_ORANGE = "Orange"
+
+# endregion  
 # pens speed  
 tc1.speed(3)
 tc2.speed(3)
@@ -53,14 +63,14 @@ def draw_fly(color, start_pos, left_right_direction, for_back_ward):
         t.circle(75 , -80)
         t.circle(-75, -50)
 
-    if color == "Red2":
+    if color == COLOR_RED:
         t.left(90)
     else:
         t.right(90)
 
     t.forward(30)
 
-    if color == "Red2":
+    if color == COLOR_RED:
         t.right(90)
     else:
         t.left(90)
@@ -89,20 +99,20 @@ def draw_fly(color, start_pos, left_right_direction, for_back_ward):
 
 
 #fly1 red and blue left up
-draw_fly("Red2", (-80,48), "left", "forward")
-draw_fly("Blue", (-55,60), "left", "forward")
+draw_fly(COLOR_RED , (-80,48), "left", "forward")
+draw_fly(COLOR_BLUE, (-55,60), "left", "forward")
 
 #fly2 red and blue right up
-draw_fly("Red2", (80,48), "right", "backward")
-draw_fly("Blue", (52,60), "right", "backward")
+draw_fly(COLOR_RED , (80,48), "right", "backward")
+draw_fly(COLOR_BLUE, (52,60), "right", "backward")
 
 #fly3 red and blue left down
-draw_fly("Red2", (-55,-60), "right", "forward")
-draw_fly("Blue", (-80,-48), "right", "forward")
+draw_fly(COLOR_RED , (-55,-60), "right", "forward")
+draw_fly(COLOR_BLUE, (-80,-48), "right", "forward")
 
 #fly4 red and blue right down
-draw_fly("Red2", (45,-60), "left", "backward")
-draw_fly("Blue", (80,-48), "left", "backward")
+draw_fly(COLOR_RED , (45,-60), "left", "backward")
+draw_fly(COLOR_BLUE, (80,-48), "left", "backward")
 
 #body
 tt1.up()
@@ -112,7 +122,7 @@ width = 250
 angle = 13.00
 angledu = 66
 
-tt1.color("#00BFFF")
+tt1.color(COLOR_BODY)
 tt1.begin_fill()
 
 tt1.left(angle)
@@ -147,7 +157,7 @@ tt1.end_fill()
 
 
 #Fist circle
-tc1.color("White")  
+tc1.color(COLOR_WHITE)  
 tc1.up()
 tc1.goto(0,-65)
 tc1.down()
@@ -162,7 +172,7 @@ tc1.end_fill()
 
 
 #Second circle 
-tc2.color("Orange")  
+tc2.color(COLOR_ORANGE)  
 tc2.up()
 tc2.goto(0,-50)
 tc2.down()
@@ -189,7 +199,7 @@ turtle.register_shape("example_resized.gif")
 tAsh = turtle.Turtle()
 
 tAsh.shape("example_resized.gif")
-tAsh.color("White")
+tAsh.color(COLOR_WHITE)
 tAsh.penup()
 tAsh.goto(0, 400)
 
