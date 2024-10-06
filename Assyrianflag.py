@@ -142,6 +142,20 @@ def draw_body(color, start_pos):
 
     t.hideturtle()
     t.end_fill()
+
+def draw_circle(color ,start_pos, diameter):
+    t = turtle.Turtle()
+    t.speed(3)
+    t.color(color)  
+    t.up()
+    t.goto(start_pos)
+    t.down()
+    #Instructing to "begin" and "end" filling the "circle"  
+    t.begin_fill()  
+    t.circle(diameter)  
+    t.hideturtle()
+    t.end_fill()  
+
 # endregion
 
 # region: Draw all the wings of the Assyrian flag
@@ -170,30 +184,10 @@ draw_body(COLOR_BODY, (52.5,-55))
 
 
 #Fist circle
-tc1.color(COLOR_WHITE)  
-tc1.up()
-tc1.goto(0,-65)
-tc1.down()
-#Instructing to "begin" and "end" filling the "circle"  
-tc1.begin_fill()  
-tc1.circle(65)  
-tc1.hideturtle()
-tc1.end_fill()  
-
-
-
-
+draw_circle(COLOR_WHITE, (0, -65), 65)
 
 #Second circle 
-tc2.color(COLOR_ORANGE)  
-tc2.up()
-tc2.goto(0,-50)
-tc2.down()
-#Instructing to "begin" and "end" filling the "circle"  
-tc2.begin_fill()  
-tc2.circle(50)  
-tc2.hideturtle()
-tc2.end_fill()  
+draw_circle(COLOR_ORANGE, (0,-50), 50)  
 
 #Clear  coordinate axis
 T.clear()
