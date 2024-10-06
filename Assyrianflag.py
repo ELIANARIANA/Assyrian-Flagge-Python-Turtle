@@ -21,6 +21,9 @@ DIRECTION_LEFT     = "left"
 DIRECTION_RIGHT    = "right"
 DIRECTION_FORWARD  = "forward"
 DIRECTION_BACKWARD = "backward"
+
+# region: Image
+IMAGE_ASHUR = "Ashur.gif"
 #endregion
 
 # endregion  
