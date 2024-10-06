@@ -43,7 +43,7 @@ T.back (800)
 T.home()
 T.hideturtle()
 
-# region: Methods Helper
+# region: Methods Helper for Drawing the Assyrian Flag
 def draw_wing(color, start_pos, left_right_direction, for_back_ward):
     t = turtle.Turtle()
 
