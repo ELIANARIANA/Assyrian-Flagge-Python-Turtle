@@ -8,18 +8,20 @@ Ashur = turtle.Screen()
 
 # region: General constants
 
-# Colors
+# region: Colors
 COLOR_RED    = "Red2"
 COLOR_BLUE   = "Blue"
 COLOR_BODY   = "#00BFFF"
 COLOR_WHITE  = "White"
 COLOR_ORANGE = "Orange"
+# endregion
 
-# Direction
+# region: Direction
 DIRECTION_LEFT     = "left"
 DIRECTION_RIGHT    = "right"
 DIRECTION_FORWARD  = "forward"
 DIRECTION_BACKWARD = "backward"
+#endregion
 
 # endregion  
 # pens speed  
