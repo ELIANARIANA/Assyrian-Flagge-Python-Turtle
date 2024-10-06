@@ -178,6 +178,7 @@ def resize_and_add_image(image, image_pos):
     
 # endregion
 
+# region: Draw the Assyrian flag
 # region: Draw all the wings of the Assyrian flag
 #wing1 red and blue left up
 draw_wing(COLOR_RED , (-80,48), DIRECTION_LEFT, DIRECTION_FORWARD)
@@ -208,14 +209,14 @@ draw_circle(COLOR_WHITE, (0, -65), 65)
 draw_circle(COLOR_ORANGE, (0,-50), 50)  
 # endregion
 
-#Clear  coordinate axis
-T.clear()
-
-
 # region: Add image of the Assyrian flag
 #add Ashur image 
 resize_and_add_image(IMAGE_ASHUR, (0, 400))
 
 # endregion
 
-turtle.done()  
+#Clear  coordinate axis
+T.clear()
+
+turtle.done()
+# endregion
