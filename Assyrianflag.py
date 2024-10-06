@@ -103,6 +103,45 @@ def draw_wing(color, start_pos, left_right_direction, for_back_ward):
     t.hideturtle()
     t.end_fill()
 
+def draw_body(color, start_pos):
+    t = turtle.Turtle()
+    t.up()
+    t.goto(start_pos)
+    t.down()
+    width = 250
+    angle = 13.00
+    angledu = 66
+
+    t.color(color)
+    t.begin_fill()
+
+    t.left(angle)
+    t.fd(width)
+
+    t.right(angle=+25)
+    t.bk(width)
+
+    t.right(angledu)
+    t.bk(width)
+
+    t.right(angle=+25) #angledu=+25
+    t.fd(width)
+
+
+    t.right(64.5)
+    t.fd(width)
+
+    t.right(25)
+    t.bk(width)
+
+    t.right(64.5)
+    t.bk(width)
+
+    t.right(25)
+    t.fd(width)
+
+    t.hideturtle()
+    t.end_fill()
 # endregion
 
 # region: Draw all the wings of the Assyrian flag
@@ -124,44 +163,8 @@ draw_wing(COLOR_BLUE, (80,-48), DIRECTION_LEFT, DIRECTION_BACKWARD)
 # endregion
 
 #body
-tt1.up()
-tt1.goto(52.5,-55)
-tt1.down()
-width = 250
-angle = 13.00
-angledu = 66
+draw_body(COLOR_BODY, (52.5,-55))
 
-tt1.color(COLOR_BODY)
-tt1.begin_fill()
-
-tt1.left(angle)
-tt1.fd(width)
-
-tt1.right(angle=+25)
-tt1.bk(width)
-
-tt1.right(angledu)
-tt1.bk(width)
-
-tt1.right(angle=+25) #angledu=+25
-tt1.fd(width)
-
-
-tt1.right(64.5)
-tt1.fd(width)
-
-tt1.right(25)
-tt1.bk(width)
-
-tt1.right(64.5)
-tt1.bk(width)
-
-tt1.right(25)
-tt1.fd(width)
-
-
-tt1.hideturtle()
-tt1.end_fill()
 
 
 
