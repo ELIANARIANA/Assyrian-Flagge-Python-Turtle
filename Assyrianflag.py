@@ -214,20 +214,6 @@ T.clear()
 
 
 #add Ashur image 
-from PIL import Image
-im = Image.open("Ashur.gif")
-
-new_size = (int(im.size[0]/3), int(im.size[1]/3))
-im = im.resize(new_size)
-im.save("example_resized.gif")
-turtle.register_shape("example_resized.gif")
-
-tAsh = turtle.Turtle()
-
-tAsh.shape("example_resized.gif")
-tAsh.color(COLOR_WHITE)
-tAsh.penup()
-tAsh.goto(0, 400)
-
+resize_and_add_image(IMAGE_ASHUR, (0, 400))
 
 turtle.done()  
