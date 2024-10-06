@@ -162,8 +162,9 @@ draw_wing(COLOR_RED , (45,-60), DIRECTION_LEFT, DIRECTION_BACKWARD)
 draw_wing(COLOR_BLUE, (80,-48), DIRECTION_LEFT, DIRECTION_BACKWARD)
 # endregion
 
-#body
+#region: Draw the body of the Assyrian flag
 draw_body(COLOR_BODY, (52.5,-55))
+# endregion
 
 
 
