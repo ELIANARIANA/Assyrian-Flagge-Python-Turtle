@@ -205,10 +205,9 @@ draw_circle(COLOR_ORANGE, (0,-50), 50)
 # region: Add image of the Assyrian flag
 #add Ashur image 
 resize_and_add_image(IMAGE_ASHUR, (0, 400))
-
 # endregion
 
-#Clear  coordinate axis
+#Remove coordinate axis
 t.clear()
 
 turtle.done()
