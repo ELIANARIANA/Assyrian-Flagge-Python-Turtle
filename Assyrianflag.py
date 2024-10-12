@@ -1,6 +1,6 @@
 #Python Program to draw a filled with colour in Turtle  
 import turtle 
-T= turtle.Turtle()
+T   = turtle.Turtle()
 tc1 = turtle.Turtle()       
 tc2 = turtle.Turtle()  
 tt1 = turtle.Turtle()
