@@ -102,8 +102,8 @@ def draw_body(color, start_pos):
     t.up()
     t.goto(start_pos)
     t.down()
-    width = 250
-    angle = 13.00
+    width   = 250
+    angle   = 13.00
     angledu = 66
 
     t.color(color)
