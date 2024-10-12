@@ -1,9 +1,6 @@
 #Python Program to draw a filled with colour in Turtle  
 import turtle 
 T   = turtle.Turtle()
-tc1 = turtle.Turtle()       
-tc2 = turtle.Turtle()  
-tt1 = turtle.Turtle()
 
 # region: General constants
 
@@ -28,9 +25,6 @@ IMAGE_ASHUR = "Ashur.gif"
 # endregion
 
 # pens speed  
-tc1.speed(3)
-tc2.speed(3)
-tt1.speed(3)
 T.speed(0)
 
 #coordinate axis
