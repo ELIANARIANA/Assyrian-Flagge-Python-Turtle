@@ -3,7 +3,6 @@ import turtle
 t = turtle.Turtle()
 
 # region: General constants
-
 # region: Colors
 COLOR_RED    = "Red2"
 COLOR_BLUE   = "Blue"
