@@ -1,6 +1,6 @@
 #Python Program to draw a filled with colour in Turtle  
 import turtle 
-T   = turtle.Turtle()
+t = turtle.Turtle()
 
 # region: General constants
 
@@ -24,20 +24,18 @@ IMAGE_ASHUR = "Ashur.gif"
 # endregion
 # endregion
 
-# pens speed  
-T.speed(0)
-
-#coordinate axis
-T.forward (900)
-T.back (1800)
-T.home()
-T.left (90)
-T.forward (400)
-T.back (800)
-T.home()
-T.hideturtle()
-
 # region: Methods Helper for Drawing the Assyrian Flag
+def draw_coordinate_axis(t):
+    t.speed(0)
+    t.forward (900)
+    t.back (1800)
+    t.home()
+    t.left (90)
+    t.forward (400)
+    t.back (800)
+    t.home()
+    t.hideturtle()
+
 def draw_wing(color, start_pos, left_right_direction, for_back_ward):
     t = turtle.Turtle()
 
@@ -173,6 +171,8 @@ def resize_and_add_image(image, image_pos):
 # endregion
 
 # region: Draw the Assyrian flag
+draw_coordinate_axis(t)
+
 # region: Draw all the wings of the Assyrian flag
 #wing1 red and blue left up
 draw_wing(COLOR_RED , (-80,48), DIRECTION_LEFT, DIRECTION_FORWARD)
@@ -210,7 +210,7 @@ resize_and_add_image(IMAGE_ASHUR, (0, 400))
 # endregion
 
 #Clear  coordinate axis
-T.clear()
+t.clear()
 
 turtle.done()
 # endregion
