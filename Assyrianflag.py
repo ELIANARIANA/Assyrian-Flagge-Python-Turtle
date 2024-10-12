@@ -156,17 +156,20 @@ def resize_and_add_image(image, image_pos):
 
     new_size = (int(im.size[0]/3), int(im.size[1]/3))
     im = im.resize(new_size)
-    im.save("{image}_resized.gif")
+    name = remove_after_period(image)
+    im.save(f"{name}_resized.gif")
 
-    turtle.register_shape("{image}_resized.gif")
+    turtle.register_shape(f"{name}_resized.gif")
 
     tAsh = turtle.Turtle()
 
-    tAsh.shape("{image}_resized.gif")
+    tAsh.shape(f"{name}_resized.gif")
     tAsh.color(COLOR_WHITE)
     tAsh.penup()
     tAsh.goto(image_pos)
     
+def remove_after_period(s):
+    return s.split('.')[0]
 # endregion
 
 # region: Draw the Assyrian flag
