@@ -4,7 +4,6 @@ T= turtle.Turtle()
 tc1 = turtle.Turtle()       
 tc2 = turtle.Turtle()  
 tt1 = turtle.Turtle()
-Ashur = turtle.Screen()
 
 # region: General constants
 
