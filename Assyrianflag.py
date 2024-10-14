@@ -170,6 +170,35 @@ def resize_and_add_image(image, image_pos):
     
 def remove_after_period(s):
     return s.split('.')[0]
+
+def draw_A():
+    t = turtle.Turtle()
+    
+    t.pensize(5)
+    t.color(COLOR_RED)
+    t.speed(2)
+    t.hideturtle()
+    t.penup()
+    t.setpos(-350, -400)
+    t.showturtle()
+    t.pendown()
+    t.right(-70)
+    t.forward(40)
+    t.right(140)
+    t.forward(40)
+    t.backward(15)
+    t.right(110)
+    t.speed(1)
+    t.hideturtle()
+    t.penup()
+    t.forward(16)
+    t.showturtle()
+    t.pendown()
+    t.right(180)
+    t.forward(16)
+
+    t.hideturtle()
+    
 # endregion
 
 # region: Draw the Assyrian flag
