@@ -198,7 +198,26 @@ def draw_A():
     t.forward(16)
 
     t.hideturtle()
-    
+
+def draw_S(start_pos):
+    t = turtle.Turtle()
+
+    t.pensize(5)
+    t.color(COLOR_RED)
+    t.speed(3)
+    t.hideturtle()
+    t.penup()
+    t.setpos(start_pos)
+    t.showturtle()
+    t.pendown()
+
+    t.forward(7.5)
+    t.circle(10 , 180)
+    t.circle(-10, 180)
+    t.forward(7.5)
+
+    t.hideturtle()
+
 # endregion
 
 # region: Draw the Assyrian flag
