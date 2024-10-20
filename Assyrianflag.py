@@ -171,7 +171,7 @@ def resize_and_add_image(image, image_pos):
 def remove_after_period(s):
     return s.split('.')[0]
 
-def draw_A():
+def draw_A(start_pos):
     t = turtle.Turtle()
     
     t.pensize(5)
@@ -179,7 +179,7 @@ def draw_A():
     t.speed(2)
     t.hideturtle()
     t.penup()
-    t.setpos(-350, -400)
+    t.setpos(start_pos)
     t.showturtle()
     t.pendown()
     t.right(-70)
