@@ -58,7 +58,7 @@ def draw_wing(color, start_pos, left_right_direction, for_back_ward):
         t.circle(75 , 80)
         t.circle(-75, 50)
     else:
-        t.backward(75)
+        t.bk(75)
         t.circle(-75, -45)
         t.circle(75 , -80)
         t.circle(-75, -80)
@@ -83,14 +83,14 @@ def draw_wing(color, start_pos, left_right_direction, for_back_ward):
         t.circle(-75, -80)
         t.circle(75 , -80)
         t.circle(-75, -45)
-        t.backward(75)
+        t.bk(75)
     else:
         t.circle(-75, 50)
         t.circle(75 , 80)
         t.circle(-75, 80)
         t.circle(75 , 80)
         t.circle(-75, 45)
-        t.backward(-75)
+        t.bk(-75)
     
     t.goto(start_pos)
 
@@ -186,7 +186,7 @@ def draw_A(start_pos):
     t.fd(40)
     t.right(140)
     t.fd(40)
-    t.backward(15)
+    t.bk(15)
     t.right(110)
     t.speed(1)
     t.hideturtle()
@@ -235,7 +235,7 @@ def draw_Y():
 
     t.left(30)
     t.fd(20)
-    t.backward(20)
+    t.bk(20)
 
     t.right(60)
     t.fd(20)
