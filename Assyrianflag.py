@@ -26,11 +26,11 @@ IMAGE_ASHUR = "Ashur.gif"
 # region: Methods Helper for Drawing the Assyrian Flag
 def draw_coordinate_axis(t):
     t.speed(0)
-    t.forward (900)
+    t.fd (900)
     t.back (1800)
     t.home()
     t.left (90)
-    t.forward (400)
+    t.fd (400)
     t.back (800)
     t.home()
     t.hideturtle()
@@ -51,7 +51,7 @@ def draw_wing(color, start_pos, left_right_direction, for_back_ward):
         t.right(135)
 
     if for_back_ward == DIRECTION_FORWARD:
-        t.forward(75)
+        t.fd(75)
         t.circle(-75, 45)
         t.circle(75 , 80)
         t.circle(-75, 80)
@@ -70,7 +70,7 @@ def draw_wing(color, start_pos, left_right_direction, for_back_ward):
     else:
         t.right(90)
 
-    t.forward(30)
+    t.fd(30)
 
     if color == COLOR_RED:
         t.right(90)
@@ -183,19 +183,19 @@ def draw_A(start_pos):
     t.showturtle()
     t.pendown()
     t.right(-70)
-    t.forward(40)
+    t.fd(40)
     t.right(140)
-    t.forward(40)
+    t.fd(40)
     t.backward(15)
     t.right(110)
     t.speed(1)
     t.hideturtle()
     t.penup()
-    t.forward(16)
+    t.fd(16)
     t.showturtle()
     t.pendown()
     t.right(180)
-    t.forward(16)
+    t.fd(16)
 
     t.hideturtle()
 
@@ -211,10 +211,10 @@ def draw_S(start_pos):
     t.showturtle()
     t.pendown()
 
-    t.forward(7.5)
+    t.fd(7.5)
     t.circle(10 , 180)
     t.circle(-10, 180)
-    t.forward(7.5)
+    t.fd(7.5)
 
     t.hideturtle()
 
@@ -231,14 +231,14 @@ def draw_Y():
     t.pendown()
     
     t.left(90)
-    t.forward(22.5)
+    t.fd(22.5)
 
     t.left(30)
-    t.forward(20)
+    t.fd(20)
     t.backward(20)
 
     t.right(60)
-    t.forward(20)
+    t.fd(20)
     
     t.hideturtle()
 
