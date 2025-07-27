@@ -20,7 +20,7 @@ DIRECTION_BACKWARD = "backward"
 # endregion
 
 # region: Image
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Verzeichnis der aktuellen Datei
+BASE_DIR    = os.path.dirname(os.path.abspath(__file__))  # Verzeichnis der aktuellen Datei
 IMAGE_ASHUR = os.path.join(BASE_DIR, "Ashur.gif")
 # endregion
 # endregion
