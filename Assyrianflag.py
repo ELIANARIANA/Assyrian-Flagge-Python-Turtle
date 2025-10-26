@@ -351,6 +351,17 @@ draw_circle(COLOR_ORANGE, (0,-50), 50)
 resize_and_add_image(IMAGE_ASHUR, (0, 400))
 # endregion
 
+# region: Draw the Assyrian word under the Assyrian flag
+draw_A((-120, -400))
+draw_S((-85,  -400))
+draw_S((-60,  -400))
+draw_Y((-25,  -400))
+draw_R((-5,   -400))
+draw_I((25,   -400))
+draw_A((55,   -400))
+draw_N((95,   -400))
+# endregion
+
 #Remove coordinate axis
 t.clear()
 
