@@ -220,7 +220,7 @@ def draw_S(start_pos):
 
     t.hideturtle()
 
-def draw_Y():
+def draw_Y(start_pos):
     t = turtle.Turtle()
 
     t.pensize(5)
@@ -228,7 +228,7 @@ def draw_Y():
     t.speed(3)
     t.hideturtle()
     t.penup()
-    t.setpos(-240, -400)
+    t.setpos(start_pos)
     t.showturtle()
     t.pendown()
     
@@ -244,7 +244,7 @@ def draw_Y():
     
     t.hideturtle()
 
-def draw_R():
+def draw_R(start_pos):
     t = turtle.Turtle()
 
     t.pensize(5)
@@ -252,7 +252,7 @@ def draw_R():
     t.speed(2)
     t.hideturtle()
     t.penup()
-    t.setpos(-220, -400)
+    t.setpos(start_pos)
     t.showturtle()
     t.pendown()
 
@@ -266,7 +266,7 @@ def draw_R():
     
     t.hideturtle()
     
-def draw_I():
+def draw_I(start_pos):
     t = turtle.Turtle()
 
     t.pensize(5)
@@ -274,7 +274,7 @@ def draw_I():
     t.speed(2)
     t.hideturtle()
     t.penup()
-    t.setpos(-180, -400)
+    t.setpos(start_pos)
     t.showturtle()
     t.pendown()
 
@@ -289,7 +289,7 @@ def draw_I():
 
     t.hideturtle()
 
-def draw_N():
+def draw_N(start_pos):
     t = turtle.Turtle()
 
     t.pensize(5)
@@ -297,7 +297,7 @@ def draw_N():
     t.speed(2)
     t.hideturtle()
     t.penup()
-    t.setpos(-100, -400)
+    t.setpos(start_pos)
     t.showturtle()
     t.pendown()
 
