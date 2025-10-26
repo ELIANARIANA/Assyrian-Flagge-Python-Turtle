@@ -55,16 +55,16 @@ def draw_wing(color, start_pos, left_right_direction, for_back_ward):
     if for_back_ward == DIRECTION_FORWARD:
         t.fd(75)
         t.circle(-75, 45)
-        t.circle(75 , 80)
+        t.circle(75,  80)
         t.circle(-75, 80)
-        t.circle(75 , 80)
+        t.circle(75,  80)
         t.circle(-75, 50)
     else:
         t.bk(75)
         t.circle(-75, -45)
-        t.circle(75 , -80)
+        t.circle(75,  -80)
         t.circle(-75, -80)
-        t.circle(75 , -80)
+        t.circle(75,  -80)
         t.circle(-75, -50)
 
     if color == COLOR_RED:
@@ -81,16 +81,16 @@ def draw_wing(color, start_pos, left_right_direction, for_back_ward):
     
     if for_back_ward == DIRECTION_FORWARD:
         t.circle(-75, -50)
-        t.circle(75 , -80)
+        t.circle(75,  -80)
         t.circle(-75, -80)
-        t.circle(75 , -80)
+        t.circle(75,  -80)
         t.circle(-75, -45)
         t.bk(75)
     else:
         t.circle(-75, 50)
-        t.circle(75 , 80)
+        t.circle(75,  80)
         t.circle(-75, 80)
-        t.circle(75 , 80)
+        t.circle(75,  80)
         t.circle(-75, 45)
         t.bk(-75)
     
@@ -214,7 +214,7 @@ def draw_S(start_pos):
     t.pendown()
 
     t.fd(7.5)
-    t.circle(10 , 180)
+    t.circle(10,  180)
     t.circle(-10, 180)
     t.fd(7.5)
 
