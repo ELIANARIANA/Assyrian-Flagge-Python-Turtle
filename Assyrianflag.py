@@ -28,12 +28,12 @@ IMAGE_ASHUR = os.path.join(BASE_DIR, "Ashur.gif")
 # region: Methods Helper for Drawing the Assyrian Flag
 def draw_coordinate_axis(t):
     t.speed(0)
-    t.fd (900)
-    t.back (1800)
+    t.fd(900)
+    t.back(1800)
     t.home()
-    t.left (90)
-    t.fd (400)
-    t.back (800)
+    t.left(90)
+    t.fd(400)
+    t.back(800)
     t.home()
     t.hideturtle()
 
